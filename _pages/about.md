@@ -1,25 +1,23 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: An aspiring astrophysicist and a part-time procrastinator.
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image: prof_pic.png
+  image_cicular: false # crops the image to make it circular
+  address: >
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+
+news: false  # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hey, Thank you for your visit. I am an aspiring astrophysicist and I am currently pursuing my Master's in Astrophysics at [LMU Munich](https://usm.uni-muenchen.de). I obtained my undergraduate degree in Engineering Physics from [IIT Guwahati](https://iitg.ac.in). I graduated from the program in `2021`, and have been working towards a career in academia since then.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I like to work in the field of Analytical and Numerical study of Fluid Dynamics in the presence of Magnetic fields. The order in the Energy cascade that emerges from the chaos of MHD Turbulence excites me. Under the supervision of [Dr Pankaj Kumar Mishra](https://www.iitg.ac.in/pankaj.mishra/), I studied the nature of the Energy spectrum and Energy cascade of 3D MHD Turbulence, as a part of my undergraduate thesis.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Apart from the academics, I love Observational Astronomy. Travelling through the night sky, equipped with a telescope is my favourite pastime. I have also worked as the Secretary of [Equinox - The Astronomy Club](https://www.iitg.ac.in/stud/gymkhana/technical/home/EquinoxHome.html) at IIT Guwahati. I lack creativity, but sometimes I dabble in generative art and creative coding. Finally, I love Linguistics, Conlanging and Worldbuilding in general.

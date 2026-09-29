@@ -15,7 +15,6 @@
     - [Add Your Content](#add-your-content)
     - [Customize Appearance](#customize-appearance)
     - [Learn More](#learn-more)
-    - [Get Help from AI](#get-help-from-ai)
 
 <!--te-->
 

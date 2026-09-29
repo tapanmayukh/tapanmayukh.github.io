@@ -56,6 +56,7 @@ Want to learn more about Jekyll? Check out [this tutorial](https://www.taniarasc
   - [Table Of Contents](#table-of-contents)
   - [Installing and Deploying](#installing-and-deploying)
   - [Customizing](#customizing)
+  - [Plugin Ecosystem](#plugin-ecosystem)
   - [Documentation](#documentation)
   - [Features](#features)
     - [Light and dark mode](#light-and-dark-mode)

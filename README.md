@@ -56,11 +56,6 @@ Want to learn more about Jekyll? Check out [this tutorial](https://www.taniarasc
   - [Table Of Contents](#table-of-contents)
   - [Installing and Deploying](#installing-and-deploying)
   - [Customizing](#customizing)
-  - [Plugin Ecosystem](#plugin-ecosystem)
-  - [Using AI Agents](#using-ai-agents)
-    - [Codex](#codex)
-    - [Claude](#claude)
-    - [Copilot And Other Agents](#copilot-and-other-agents)
   - [Documentation](#documentation)
   - [Features](#features)
     - [Light and dark mode](#light-and-dark-mode)
@@ -119,34 +114,6 @@ The bundled v1 plugin repos are:
 - [`al-citations`](https://github.com/al-org-dev/al-citations): publication/citation helpers
 - [`al-ext-posts`](https://github.com/al-org-dev/al-ext-posts): external post ingestion
 - [`al-analytics`](https://github.com/al-org-dev/al-analytics), [`al-comments`](https://github.com/al-org-dev/al-comments), [`al-cookie`](https://github.com/al-org-dev/al-cookie), [`al-img-tools`](https://github.com/al-org-dev/al-img-tools), [`al-math`](https://github.com/al-org-dev/al-math), [`al-charts`](https://github.com/al-org-dev/al-charts), and [`al-newsletter`](https://github.com/al-org-dev/al-newsletter): feature-specific runtime and integration behavior
-
-## Using AI Agents
-
-`al-folio` v1.x is designed for agent-assisted setup and migration. Agents should read [AGENTS.md](AGENTS.md) first, then use [docs/BOUNDARIES.md](docs/BOUNDARIES.md) to route changes to the starter or the owning plugin repo.
-
-For existing customized forks, the recommended migration path is to ask an agent to use the [al-folio v1 migration skill](.agents/skills/al-folio-v1-migration/SKILL.md). The skill walks through creating a disposable migration branch, bringing site-owned content/config/data onto the v1 starter contract, running `al_folio_upgrade`, auditing local overrides, and validating the build. This is preferred over a manual file-by-file upgrade because v1 runtime ownership moved into plugins and local overrides need explicit drift tracking.
-
-The canonical skills live in [.agents/skills/](.agents/skills/). They are also exposed through `.codex/skills/` and `.claude/skills/` symlinks for agents that discover skills from tool-specific directories.
-
-### Codex
-
-Codex can use the repo-local skills:
-
-- [al-folio bootstrap](.agents/skills/al-folio-bootstrap/SKILL.md): create and configure a new v1 site.
-- [al-folio v1 migration](.agents/skills/al-folio-v1-migration/SKILL.md): migrate customized forks and audit local overrides.
-
-Useful first prompts:
-
-- "Use the al-folio bootstrap skill to configure my new site."
-- "Use the al-folio v1 migration skill to migrate this customized fork and run the override audit."
-
-### Claude
-
-Claude should start from [CLAUDE.md](CLAUDE.md), which imports [AGENTS.md](AGENTS.md). For setup or migration tasks, use the matching skill from `.claude/skills/`, which points to the canonical `.agents/skills/` directory.
-
-### Copilot And Other Agents
-
-Copilot should follow [.github/copilot-instructions.md](.github/copilot-instructions.md) and the specialized agents in [.github/agents/](.github/agents/). Other agents should follow the same rule: keep starter work in this repo, route runtime behavior to the owning `al-org-dev` plugin, and run `bundle exec al-folio upgrade overrides audit` whenever local overrides are added or retained.
 
 ## Documentation
 
@@ -279,7 +246,7 @@ CI runs the following on every pull request:
 
 - [Prettier](https://prettier.io/) — formatting, including Liquid templates
 - [lychee](https://lychee.cli.rs/) — broken links
-- `npm run lint:style-contract` — enforces the thin-starter boundary described in [AGENTS.md](AGENTS.md)
+- `npm run lint:style-contract` — enforces the thin-starter boundary
 - the six `test/integration_*.sh` scripts, and Playwright visual-regression checks
 
 [Axe](https://github.com/dequelabs/axe-core) accessibility checks are run manually, because the fixes are not always straightforward for contributors without web development experience.
